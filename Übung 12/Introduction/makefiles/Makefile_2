@@ -1,0 +1,15 @@
+# Variablen
+CC = gcc
+CFLAGS=-std=c99 -Wall -Wpedantic -Werror -g
+
+main: myfunction.o main.o
+	$(CC) $^ -o $@
+
+myfunction.o: myfunction.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+main.o: main.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f *.o main
