@@ -6,4 +6,6 @@
 
 3. Den Header in alle C-Files einbinden. 
 
+4. Weitere includes hinzufügen, sofern notwendig.
+
 4. Ein Makefile erstellen, das die Object-Files der C-Dateien myfunction_number.c und myfunction_string.c in eine statisch gelinkte Bibliothek zusammenfasst. 
